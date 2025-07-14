@@ -1,12 +1,19 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Button } from "react-native";
+import { GeneralNavigationProp } from "../../types/navigation_types/navigation_types";
+import { useNavigation } from "@react-navigation/native";
+import { styles } from "./styles";
 
 const IntroScreen = () => {
-    return (
-        <View>
-            <Text>IntroScreen</Text>
-        </View>
-    )
-}
+  const navigation = useNavigation<GeneralNavigationProp>();
 
-export default IntroScreen
+  return (
+    <View style={styles.root}>
+      <Button
+        title="GO NEXT PAGE"
+        onPress={() => navigation.navigate("SelectionScreen")}
+      />
+    </View>
+  );
+};
+
+export default IntroScreen;
