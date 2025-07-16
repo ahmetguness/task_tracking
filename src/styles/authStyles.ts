@@ -1,10 +1,10 @@
 import { StyleSheet, Dimensions } from "react-native";
-import { colors } from "../../constants/colors";
+import { colors } from "../constants/colors";
 
 const { width } = Dimensions.get("window");
 const scaleFont = (size: number) => size * (width / 375);
 
-export const styles = StyleSheet.create({
+export const authStyles = StyleSheet.create({
   root: {
     flex: 1,
     backgroundColor: colors.white,
@@ -114,12 +114,5 @@ export const styles = StyleSheet.create({
     fontSize: scaleFont(16),
     fontWeight: "bold",
     marginLeft: 10,
-  },
-
-  guestContainer: {
-    alignItems: "center",
-  },
-  guestIcon: {
-    marginBottom: 40,
   },
 });

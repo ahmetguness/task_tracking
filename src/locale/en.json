@@ -1,0 +1,8 @@
+{
+    "parent": "Parent",
+    "child": "Child",
+    "guest": "Guest",
+    "description_parent": "Requires 2 different devices and internet connection. Requires user login. Tasks, rewards and points awarded to the child are checked here.",
+    "description_child": "Requires 2 different devices and internet connection. Requires user login. Tasks and rewards given by the parent are completed here.",
+    "description_guest": "Only one device is enough. No internet connection required. No user login required. All controls are done from a single device. If you delete the app, all your data will be irreversibly deleted. No user login required."
+}
